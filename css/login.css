@@ -6,7 +6,9 @@ body {
     padding: 0;
     color: #023047
 }
-
+#login{
+    text-align: center;
+}
 .page {
     display: flex;
     flex-direction: column;
@@ -71,7 +73,7 @@ body {
     display: inline-block;
     margin-bottom: 20px;
     font-size: 13px;
-    color: #555;
+    color: rgb(98, 98, 250);
     transition: all linear 160ms;
 }
 
@@ -79,9 +81,6 @@ body {
     color: #f72585;
 }
 
-.remember{
-    flex-direction: row;
-}
 .btn {
     background-color: rgb(119, 4, 181);
     color: #fff;
@@ -96,6 +95,12 @@ body {
 
 .btn:hover {
     transform: scale(1.05);
-    background-color: #ff0676;
+    background-color: rgb(208, 48, 187);
+}
 
+.naoinscrito{
+    display: flex;
+    align-items: baseline;
+    content: space-between;
+    
 }

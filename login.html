@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="page">
-        <form method="POST" class="formLogin">
-            <h1>Login</h1>
+        <form action="" method="POST" class="formLogin">
+            <h1 id="login">Login</h1>
             <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite seu e-mail" />
-            <label for="lembrar" class="remember"> Lembrar de mim  </label>
-            <input type="checkbox" class="remember"/>
-            <a href="/">Esqueci minha senha</a>
+            <label for="email">E-mail:</label>
+            <input type="email" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; name="email" placeholder="&#xf0e0 Digite seu e-mail" autofocus="true" />
+            <label for="password">Senha:</label> 
+            <input type="password" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; name="password" placeholder="&#xf084; Digite a senha"/>
+            <a class="esqueci" href="/">Esqueci minha senha</a>
+            <div class="remember">
+            <label for="lembrar"> Lembrar de mim</label>
+            <input type="checkbox" checked/>
+            </div>
             <input type="submit" value="Acessar" class="btn" />
+            <div class="naoinscrito">
+            <label> Não é inscrito? </label>
+            <a href="/"> Se inscreva aqui!</a>
+            </div>
         </form>
     </div>
     
